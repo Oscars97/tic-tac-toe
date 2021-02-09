@@ -9,15 +9,14 @@ export function Home() {
 	let [firstName, setFirstName] = useState("");
 	let [secondName, setSecondName] = useState("");
 	let [next, setNext] = useState(false);
+	let [winner, setWinner] = useState("");
 
 	const changeState = () => {
 		setNext(true);
 	};
 	return (
 		<div>
-			<h1 className="main-title">
-				Tic Tac Toe with {firstName} {secondName}
-			</h1>
+			<h1 className="main-title">Tic Tac Toe with</h1>
 			<div className="main">
 				<h2>Pick your weapon</h2>
 				<Form
@@ -25,15 +24,22 @@ export function Home() {
 					setSecondName={setSecondName}
 				/>
 				<div className="buttons">
-					<a href="#game" onClick={changeState} className="btnX">
+					<button href="" onClick={changeState} className="btnX">
 						X
-					</a>
-					<a href="#game" onClick={changeState} className="btnX">
+					</button>
+					<button href="" onClick={changeState} className="btnX">
 						O
-					</a>
+					</button>
 				</div>
 			</div>
-			{next ? <Game id="game" /> : null}
+			{next ? (
+				<Game
+					setWinner={setWinner}
+					winner={winner}
+					firstName={firstName}
+					secondName={secondName}
+				/>
+			) : null}
 		</div>
 	);
 }
