@@ -12,29 +12,42 @@
 
 */
 body{
-    background-color: rgb(101, 93, 93);
-    color: black;
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
     font-family: 14px "Century Gothic", Futura, sans-serif;
     margin: 20px;
 }
 .main-title{
     text-align: center;
+    font-size: 3rem;
+}
+input{
+    border-radius: 10px;
+    margin-top: 10px;
 }
 .main{
+    background-color: rgba(0, 0, 0, 0.363);
     width: 50%;
-    height: 220px;
+    height: 300px;
     border: solid 4px white;
     margin: 10% auto;
     text-align: center;
+    
+    .second-title{
+        font-size: 2.5rem;
+    }
 }
 .buttons{
     margin-top: 7%;
-
-    a{
+    
+    .btnX{
         background-color: #fff;
         margin-right: 2%;
         border-radius: 25px;
-        padding: 30px;
+        padding: 20px;
         border: solid 2px black;
     }
 }
@@ -58,7 +71,7 @@ ol, ul {
   padding-left: 30px;
 }
 .game-board{
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     margin-left: 35%;
 
@@ -86,7 +99,7 @@ ol, ul {
   padding: 0;
   text-align: center;
   width: 150px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 .square:hover{
     background-color: rgb(199, 29, 29);

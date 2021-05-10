@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/index.scss";
 import PropTypes from "prop-types";
 const Form = ({ setFirstName, setSecondName }) => {
 	const getFirstName = e => {

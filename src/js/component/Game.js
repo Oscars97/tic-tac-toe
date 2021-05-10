@@ -101,6 +101,12 @@ class Game extends React.Component {
 						onClick={i => this.handleClick(i)}
 					/>
 					<p>{status}</p>
+					<button
+						onClick={() => {
+							window.location.reload();
+						}}>
+						Start Again
+					</button>
 				</div>
 			</div>
 		);

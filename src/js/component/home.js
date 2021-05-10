@@ -16,9 +16,9 @@ export function Home() {
 	};
 	return (
 		<div>
-			<h1 className="main-title">Tic Tac Toe with</h1>
+			<h1 className="main-title">Tic Tac Toe with React</h1>
 			<div className="main">
-				<h2>Pick your weapon</h2>
+				<h2 className="second-title">Pick your weapon</h2>
 				<Form
 					setFirstName={setFirstName}
 					setSecondName={setSecondName}
